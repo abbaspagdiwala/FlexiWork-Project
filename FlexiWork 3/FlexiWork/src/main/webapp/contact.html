@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlexiWork Contact Us</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #c8e6c9);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #333;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: stretch;
+      background: #ffffff;
+      width: 90%;
+      max-width: 1100px;
+      border-radius: 12px;
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    .contact-box {
+      padding: 40px;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .header h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #3A3A38;
+    }
+
+    .input-group {
+      margin-bottom: 20px;
+    }
+
+    .input-group label {
+      font-size: 14px;
+      margin-bottom: 5px;
+      display: block;
+      color: #555;
+    }
+
+    .input-group input,
+    .input-group textarea {
+      width: 100%;
+      padding: 12px;
+      font-size: 14px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+
+    .input-group input:focus,
+    .input-group textarea:focus {
+      border-color: #2e7d32;
+      box-shadow: 0 0 5px rgba(46, 125, 50, 0.5);
+      outline: none;
+    }
+
+    .contact-btn {
+      width: 100%;
+      background-color: #3A3A38;
+      color: #fff;
+      padding: 12px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .contact-btn:hover {
+      background-color: gray;
+      color: buttonshadow;
+    }
+
+    .animation-container {
+      width: 50%;
+      background: linear-gradient(135deg, black, aqua);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      animation: slideUp 1.2s ease-in-out;
+    }
+
+    .plant-animation {
+      text-align: center;
+    }
+
+    .plant-animation img {
+      width: 100%;
+      max-width: 300px;
+      height: 250px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .plant-animation p {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #ffffff;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes slideUp {
+      from {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .contact-box, .animation-container {
+        width: 100%;
+      }
+
+      .animation-container {
+        height: 300px;
+        order: -1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="contact-box">
+      <div class="header">
+        <h2>Contact FlexiWork</h2>
+        <p style="margin-top: 5px; font-size: 14px; color: #666;">We'd love to hear from you!</p>
+      </div>
+      <form action="submitContactDetails" method="post">
+        <div class="input-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="Enter your full name" name="name" required>
+        </div>
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email" name="email" required>
+        </div>
+        <div class="input-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" placeholder="Enter subject" name="subject" required>
+        </div>
+        <div class="input-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" placeholder="Write your message here" name="message" required></textarea>
+        </div>
+        <button type="submit" class="contact-btn">Send Message</button>
+      </form>
+    </div>
+    <div class="animation-container">
+      <div class="plant-animation">
+        <img src="useer2.png" alt="Illustration">
+        <p>Hire Smart. Hire Fast. Find Skills Near You</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
