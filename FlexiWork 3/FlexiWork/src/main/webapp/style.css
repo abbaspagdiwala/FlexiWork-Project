@@ -210,59 +210,57 @@ ul {
 	text-decoration: underline;
 }
 
-/* Why Choose Us */
-.choose__container {
-	display: grid;
-}
+/* Why Choose Us */ 
+/* why choice us */
 
-.choose__container choose__image img{
-	width: 200px;
-	height: 100px;
+.choose__container {
+  display: flex;
 }
 
 .choose__content {
-	padding-block: 2rem 5rem;
-	padding-inline: 1rem;
+  padding-block: 2rem 5rem;
+  padding-inline: 1rem;
 }
 
 .choose__grid {
-	margin-top: 3rem;
-	display: grid;
-	gap: 2rem 1rem;
+	display:grid;
+	grid-template-columns:auto auto auto;
+  margin-top: 3rem;
+  display: grid;
+  gap: 2rem 1rem;
 }
 
 .choose__card {
-	display: flex;
-	align-items: flex-start;
-	gap: 1rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
 }
 
 .choose__card span {
-	padding: 5px 7px;
-	font-size: 1.5rem;
-	background-color: var(--extra-light);
-	color: var(--primary-color);
-	border-radius: 0.5rem;
+  padding: 5px 7px;
+  font-size: 1.5rem;
+  background-color: ;
+  color: ;
+  border-radius: 0.5rem;
 }
 
 .choose__card h4 {
-	margin-bottom: 5px;
-	font-size: 1.1rem;
-	font-weight: 500;
-	color: var(--text-dark);
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: ;
 }
-
 .choose__card p {
-	font-size: 0.9rem;
-	color: var(--text-light);
-	line-height: 1.5rem;
+  font-size: 0.9rem;
+  color: ;
+  line-height: 1.5rem;
+}
+.section__header{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
 }
 
-.section__header {
-	text-align: center;
-	font-size: 30px;
-	font-weight: 600;
-}
 
 /* Worker Detail */
 .worker-detail {
