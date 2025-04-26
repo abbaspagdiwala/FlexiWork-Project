@@ -98,7 +98,7 @@
 
   <section class="choose__container" id="choose">
     <div class="choose__image">
-        <img style="width:400px; height:300px; margin:auto auto;" src="img/lab.png" alt="choose"/">
+        <img style="width:450px; height:500px; margin:auto auto;" src="img/lab.png" alt="choose"/">
     </div>
     
     <div class="choose__content">
@@ -107,7 +107,7 @@
             Discover the difference with our FlexiWork. We offer reliable
             job opportunities with low cost and easy navigation.
         </p>
-        <div class="choose__grid" style="align-content:center; margin:auto auto;">
+        <div class="choose__grid">
             <div class="choose__card">
                 <span><i class="ri-customer-service-line"></i></span>
                 <div>
@@ -120,8 +120,7 @@
                 <div>
                     <h4>Many Locations</h4>
                     <p>
-                        Convenient pick-up and drop-off locations to suit your travel
-                        needs.
+                        Convenient workers at your locations to suit your needs.
                     </p>
                 </div>
             </div>
@@ -129,28 +128,22 @@
                 <span><i class="ri-wallet-line"></i></span>
                 <div>
                     <h4>Best Price</h4>
-                    <p>Enjoy competitive rates and great value for every rental.</p>
+                    <p>Have competitive rates and great value for every user.</p>
                 </div>
             </div>
-            <div class="choose__card">
-                <span><i class="ri-user-star-line"></i></span>
-                <div>
-                    <h4>Self Drive</h4>
-                    <p>Drive at your pace, your way chooses self-drive.</p>
-                </div>
-            </div>
+            
             <div class="choose__card">
                 <span><i class="ri-verified-badge-line"></i></span>
                 <div>
-                    <h4>Verified Brands</h4>
-                    <p>Choose from trusted and well-maintained car brands.</p>
+                    <h4>Certified Workers</h4>
+                    <p>Choose from trusted and well-behaved workers.</p>
                 </div>
             </div>
             <div class="choose__card">
                 <span><i class="ri-calendar-close-line"></i></span>
                 <div>
                     <h4>Free Cancellations</h4>
-                    <p>Flexible bookings with free cancellation options.</p>
+                    <p>Flexible hiring with free cancellation options.</p>
                 </div>
             </div>
         </div>
